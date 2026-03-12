@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  background-color: #FAF7F2;
+  color: #1A1A1A;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+}
+
+h3, h4 {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-weight: 600;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes countUp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.panel-enter {
+  animation: slideInRight 0.3s ease forwards;
+}
+
+.section-animate {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease;
+}

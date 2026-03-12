@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* CYL colors (cs- prefix) */
+  --color-cs-gold: #C8942E;
+  --color-cs-amber: #D4A843;
+  --color-cs-charcoal: #1A1A1A;
+  --color-cs-cream: #FAF7F2;
+  --color-cs-border: #E8E4DF;
+  --color-cs-green: #4A7C59;
+  --color-cs-teal: #2A7B88;
+  --color-cs-brown: #8B6B3D;
+  --color-cs-gray: #6B7280;
+
+  /* Youth colors (no prefix) */
+  --color-charcoal: #1A1A1A;
+  --color-gold: #C8942E;
+  --color-amber: #D4A843;
+  --color-cream: #FAF7F2;
+  --color-border: #E8E4DF;
+  --color-green: #4A7C59;
+  --color-teal: #2A7B88;
+  --color-brown: #8B6B3D;
+
+  /* Fonts */
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+}

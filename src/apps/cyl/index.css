@@ -1,0 +1,63 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  background-color: #FFFFFF;
+  color: #1A1A1A;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Slide animations for application review */
+@keyframes slideInFromRight {
+  from { transform: translateX(48px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+@keyframes slideOutToLeft {
+  from { transform: translateX(0);     opacity: 1; }
+  to   { transform: translateX(-48px); opacity: 0; }
+}
+@keyframes slideInFromLeft {
+  from { transform: translateX(-48px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@keyframes slideOutToRight {
+  from { transform: translateX(0);    opacity: 1; }
+  to   { transform: translateX(48px); opacity: 0; }
+}
+
+.anim-slide-in-right  { animation: slideInFromRight 0.28s ease-out; }
+.anim-slide-in-left   { animation: slideInFromLeft  0.28s ease-out; }
+.anim-slide-out-left  { animation: slideOutToLeft   0.22s ease-out forwards; }
+.anim-slide-out-right { animation: slideOutToRight  0.22s ease-out forwards; }
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.3s ease-out; }
+
+/* Report fade */
+@keyframes reportFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.report-fade { animation: reportFade 0.4s ease-out; }
+
+/* Table fade */
+@keyframes tableFade {
+  from { opacity: 0.3; }
+  to   { opacity: 1; }
+}
+.table-fade { animation: tableFade 0.25s ease-out; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #FAF7F2; }
+::-webkit-scrollbar-thumb { background: #E8E4DF; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #C8942E; }
